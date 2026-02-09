@@ -52,10 +52,6 @@ assignment-1/
 └── README.md                # Project documentation
 ```
 
-
-Readme · MD
-Copy
-
 # Project Setup Guide
 
 ## ▶️ How to Run the Project
@@ -63,7 +59,13 @@ Copy
 ### 1️⃣ Create and Activate Virtual Environment
 
 ```bash
-# Create virtual environment
+
+Make sure your Python version is 3.12+ and pip version is 24.0+ to avoid dependency errors.
+
+# Change dir
+cd Bookleaf_assignment_1
+
+# Create virtual environment, you can also choose your own env name
 python -m venv assignment-1
 
 # Activate virtual environment (Windows)
@@ -104,9 +106,7 @@ http://localhost:8000/docs
 ## 📌 Assumptions Made
 
 - **Dynamic Calculations**: Author total earnings and current balance are calculated dynamically from sales and withdrawals
-- **Withdrawal Status**: Withdrawals are created with an initial status of `pending`
 - **Database Design**: The design supports easy migration to enterprise databases like PostgreSQL or MySQL
-- **Authentication**: Authentication and authorization are out of scope for this assignment
 
 ---
 
