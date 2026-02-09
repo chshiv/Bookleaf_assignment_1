@@ -1,0 +1,379 @@
+2026-02-08 23:44:53,928 | INFO | MainApp | Application startup initiated
+2026-02-08 23:44:54,186 | INFO | MainApp | Database seeded successfully
+2026-02-08 23:44:54,186 | INFO | MainApp | Application started
+2026-02-08 23:49:35,393 | INFO | MainApp | Application shutting down
+2026-02-08 23:49:39,172 | INFO | MainApp | Application startup initiated
+2026-02-08 23:49:39,188 | INFO | MainApp | Database seeded successfully
+2026-02-08 23:49:39,188 | INFO | MainApp | Application started
+2026-02-08 23:53:25,227 | INFO | MainApp | Application shutting down
+2026-02-08 23:53:29,298 | INFO | MainApp | Application startup initiated
+2026-02-08 23:53:29,335 | INFO | MainApp | Database seeded successfully
+2026-02-08 23:53:29,336 | INFO | MainApp | Application started
+2026-02-08 23:53:50,627 | INFO | MainApp | Application shutting down
+2026-02-08 23:53:53,233 | INFO | MainApp | Application startup initiated
+2026-02-08 23:53:53,254 | INFO | MainApp | Database seeded successfully
+2026-02-08 23:53:53,254 | INFO | MainApp | Application started
+2026-02-08 23:53:59,426 | INFO | AuthorAPI | GET /authors/1/withdrawals called
+2026-02-08 23:53:59,427 | INFO | AuthorService | Fetching withdrawals for author_id=1
+2026-02-08 23:53:59,435 | INFO | AuthorService | Found 0 withdrawals for author_id=1
+2026-02-08 23:53:59,436 | INFO | AuthorAPI | Returning 0 withdrawals for author_id=1
+2026-02-08 23:55:26,526 | INFO | AuthorAPI | GET /authors/4/withdrawals called
+2026-02-08 23:55:26,526 | INFO | AuthorService | Fetching withdrawals for author_id=4
+2026-02-08 23:55:26,526 | WARNING | AuthorService | Author not found: 4
+2026-02-08 23:55:26,526 | ERROR | AuthorAPI | Unexpected error in GET /authors/4/withdrawals: 404: No Withdrawals found for the author
+Traceback (most recent call last):
+  File "D:\Bookleaf publishing project\assignment-1\routes\royalty_apis.py", line 77, in get_withdrawals
+    withdrawals = get_author_withdrawals(author_id, db)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Bookleaf publishing project\assignment-1\services\royalty_service.py", line 257, in get_author_withdrawals
+    raise HTTPException(status_code=404, detail="Author not found")
+fastapi.exceptions.HTTPException: 404: No Withdrawals found for the author
+2026-02-08 23:56:47,215 | INFO | MainApp | Application shutting down
+2026-02-08 23:56:51,050 | INFO | MainApp | Application startup initiated
+2026-02-08 23:56:51,075 | INFO | MainApp | Database seeded successfully
+2026-02-08 23:56:51,075 | INFO | MainApp | Application started
+2026-02-08 23:56:56,290 | INFO | AuthorAPI | GET /authors/4/withdrawals called
+2026-02-08 23:56:56,290 | INFO | AuthorService | Fetching withdrawals for author_id=4
+2026-02-08 23:56:56,290 | WARNING | AuthorService | Author not found: 4
+2026-02-08 23:56:56,290 | ERROR | AuthorAPI | Unexpected error in GET /authors/4/withdrawals: 404: Author not found
+Traceback (most recent call last):
+  File "D:\Bookleaf publishing project\assignment-1\routes\royalty_apis.py", line 77, in get_withdrawals
+    withdrawals = get_author_withdrawals(author_id, db)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Bookleaf publishing project\assignment-1\services\royalty_service.py", line 257, in get_author_withdrawals
+    raise HTTPException(status_code=404, detail="Author not found")
+fastapi.exceptions.HTTPException: 404: Author not found
+2026-02-08 23:58:01,428 | INFO | MainApp | Application shutting down
+2026-02-08 23:58:04,905 | INFO | MainApp | Application startup initiated
+2026-02-08 23:58:04,926 | INFO | MainApp | Database seeded successfully
+2026-02-08 23:58:04,926 | INFO | MainApp | Application started
+2026-02-08 23:58:07,365 | INFO | AuthorAPI | GET /authors/4/withdrawals called
+2026-02-08 23:58:07,365 | INFO | AuthorService | Fetching withdrawals for author_id=4
+2026-02-08 23:58:07,369 | WARNING | AuthorService | Author not found: 4
+2026-02-09 00:02:13,068 | INFO | MainApp | Application shutting down
+2026-02-09 00:02:16,271 | INFO | MainApp | Application startup initiated
+2026-02-09 00:02:16,293 | INFO | MainApp | Database seeded successfully
+2026-02-09 00:02:16,295 | INFO | MainApp | Application started
+2026-02-09 00:02:24,774 | INFO | AuthorAPI | GET /authors/1/withdrawals called
+2026-02-09 00:02:24,774 | INFO | AuthorService | Fetching withdrawals for author_id=1
+2026-02-09 00:02:24,779 | INFO | AuthorService | No withdrawals found for author_id=1
+2026-02-09 00:02:24,781 | INFO | AuthorAPI | Returning 2 withdrawals for author_id=1
+2026-02-09 00:16:50,971 | INFO | MainApp | Application shutting down
+2026-02-09 00:16:59,010 | INFO | MainApp | Application startup initiated
+2026-02-09 00:16:59,376 | INFO | MainApp | Database seeded successfully
+2026-02-09 00:16:59,376 | INFO | MainApp | Application started
+2026-02-09 00:19:27,137 | INFO | AuthorAPI | GET /authors called
+2026-02-09 00:19:27,137 | INFO | AuthorService | Fetching all authors
+2026-02-09 00:19:27,140 | INFO | AuthorService | Total authors found: 3
+2026-02-09 00:19:27,140 | INFO | AuthorService | Calculating balance for author_id=1
+2026-02-09 00:19:27,146 | INFO | AuthorService | Author 1 earnings calculated: 3825.0
+2026-02-09 00:19:27,147 | INFO | AuthorService | Author 1 withdrawn amount: 0.0
+2026-02-09 00:19:27,149 | INFO | AuthorService | Author 1 balance: 3825.0
+2026-02-09 00:19:27,149 | INFO | AuthorService | Calculating balance for author_id=2
+2026-02-09 00:19:27,151 | INFO | AuthorService | Author 2 earnings calculated: 9975.0
+2026-02-09 00:19:27,152 | INFO | AuthorService | Author 2 withdrawn amount: 0.0
+2026-02-09 00:19:27,153 | INFO | AuthorService | Author 2 balance: 9975.0
+2026-02-09 00:19:27,153 | INFO | AuthorService | Calculating balance for author_id=3
+2026-02-09 00:19:27,153 | INFO | AuthorService | Author 3 earnings calculated: 400.0
+2026-02-09 00:19:27,156 | INFO | AuthorService | Author 3 withdrawn amount: 0.0
+2026-02-09 00:19:27,156 | INFO | AuthorService | Author 3 balance: 400.0
+2026-02-09 00:19:27,158 | INFO | AuthorService | Finished processing authors
+2026-02-09 00:20:06,941 | INFO | AuthorAPI | GET /authors called
+2026-02-09 00:20:06,941 | INFO | AuthorService | Fetching all authors
+2026-02-09 00:20:06,941 | INFO | AuthorService | Total authors found: 3
+2026-02-09 00:20:06,941 | INFO | AuthorService | Calculating balance for author_id=1
+2026-02-09 00:20:06,941 | INFO | AuthorService | Author 1 earnings calculated: 3825.0
+2026-02-09 00:20:06,941 | INFO | AuthorService | Author 1 withdrawn amount: 0.0
+2026-02-09 00:20:06,941 | INFO | AuthorService | Author 1 balance: 3825.0
+2026-02-09 00:20:06,941 | INFO | AuthorService | Calculating balance for author_id=2
+2026-02-09 00:20:06,951 | INFO | AuthorService | Author 2 earnings calculated: 9975.0
+2026-02-09 00:20:06,951 | INFO | AuthorService | Author 2 withdrawn amount: 0.0
+2026-02-09 00:20:06,953 | INFO | AuthorService | Author 2 balance: 9975.0
+2026-02-09 00:20:06,953 | INFO | AuthorService | Calculating balance for author_id=3
+2026-02-09 00:20:06,954 | INFO | AuthorService | Author 3 earnings calculated: 400.0
+2026-02-09 00:20:06,955 | INFO | AuthorService | Author 3 withdrawn amount: 0.0
+2026-02-09 00:20:06,957 | INFO | AuthorService | Author 3 balance: 400.0
+2026-02-09 00:20:06,958 | INFO | AuthorService | Finished processing authors
+2026-02-09 00:20:53,467 | INFO | AuthorAPI | GET /authors/author_id called
+2026-02-09 00:20:53,467 | INFO | AuthorService | Fetching author_id=4
+2026-02-09 00:20:53,471 | WARNING | AuthorService | Author not found: 4
+2026-02-09 00:20:53,472 | ERROR | AuthorService | Database error while fetching author details
+Traceback (most recent call last):
+  File "D:\Bookleaf publishing project\assignment-1\services\royalty_service.py", line 78, in get_author_with_books_and_balance
+    raise HTTPException(status_code=404, detail="Author not found")
+fastapi.exceptions.HTTPException: 404: Author not found
+2026-02-09 00:23:14,128 | INFO | MainApp | Application shutting down
+2026-02-09 00:23:17,168 | INFO | MainApp | Application startup initiated
+2026-02-09 00:23:17,189 | INFO | MainApp | Database seeded successfully
+2026-02-09 00:23:17,189 | INFO | MainApp | Application started
+2026-02-09 00:23:45,013 | INFO | AuthorAPI | GET /authors/author_id called
+2026-02-09 00:23:45,014 | INFO | AuthorService | Fetching author_id=4
+2026-02-09 00:23:45,016 | WARNING | AuthorService | Author not found: 4
+2026-02-09 00:24:23,112 | INFO | AuthorAPI | GET /authors/author_id called
+2026-02-09 00:24:23,112 | INFO | AuthorService | Fetching author_id=1
+2026-02-09 00:24:23,124 | INFO | AuthorService | Author 1 fetched successfully
+2026-02-09 00:24:23,124 | INFO | AuthorAPI | Reposne from buisness logic
+2026-02-09 00:24:38,962 | INFO | AuthorAPI | GET /authors/author_id called
+2026-02-09 00:24:38,962 | INFO | AuthorService | Fetching author_id=2
+2026-02-09 00:24:38,967 | INFO | AuthorService | Author 2 fetched successfully
+2026-02-09 00:24:38,967 | INFO | AuthorAPI | Reposne from buisness logic
+2026-02-09 00:24:50,875 | INFO | AuthorAPI | GET /authors/author_id called
+2026-02-09 00:24:50,875 | INFO | AuthorService | Fetching author_id=3
+2026-02-09 00:24:50,879 | INFO | AuthorService | Author 3 fetched successfully
+2026-02-09 00:24:50,879 | INFO | AuthorAPI | Reposne from buisness logic
+2026-02-09 00:25:25,243 | INFO | AuthorService | Fetching sales for author_id=4
+2026-02-09 00:25:25,243 | WARNING | AuthorService | Author not found: 4
+2026-02-09 00:25:40,690 | INFO | AuthorService | Fetching sales for author_id=3
+2026-02-09 00:25:40,696 | INFO | AuthorService | Fetched 1 sales for author_id=3
+2026-02-09 00:25:51,608 | INFO | AuthorService | Fetching sales for author_id=2
+2026-02-09 00:25:51,612 | INFO | AuthorService | Fetched 4 sales for author_id=2
+2026-02-09 00:26:06,388 | INFO | AuthorService | Fetching sales for author_id=1
+2026-02-09 00:26:06,392 | INFO | AuthorService | Fetched 3 sales for author_id=1
+2026-02-09 00:28:29,781 | INFO | AuthorAPI | POST /withdrawals called
+2026-02-09 00:28:29,781 | INFO | AuthorAPI | POST /withdrawals called for author_id=1
+2026-02-09 00:28:29,781 | INFO | AuthorService | Creating withdrawal: author_id=1, amount=1000
+2026-02-09 00:28:29,784 | INFO | AuthorService | Author 1 current_balance=3825.0
+2026-02-09 00:28:29,835 | INFO | AuthorService | Withdrawal created successfully for author_id=1, new_balance=2825.0
+2026-02-09 00:28:56,363 | INFO | AuthorAPI | GET /authors/1/withdrawals called
+2026-02-09 00:28:56,364 | INFO | AuthorService | Fetching withdrawals for author_id=1
+2026-02-09 00:28:56,367 | INFO | AuthorService | Found 1 withdrawals for author_id=1
+2026-02-09 00:28:56,367 | INFO | AuthorAPI | Returning 2 withdrawals for author_id=1
+2026-02-09 00:29:22,045 | INFO | AuthorAPI | POST /withdrawals called
+2026-02-09 00:29:22,045 | INFO | AuthorAPI | POST /withdrawals called for author_id=1
+2026-02-09 00:29:22,047 | INFO | AuthorService | Creating withdrawal: author_id=1, amount=3000
+2026-02-09 00:29:22,049 | INFO | AuthorService | Author 1 current_balance=2825.0
+2026-02-09 00:29:22,049 | WARNING | AuthorService | Withdrawal amount exceeds balance: 3000 > 2825.0
+2026-02-09 00:29:32,329 | INFO | AuthorAPI | POST /withdrawals called
+2026-02-09 00:29:32,330 | INFO | AuthorAPI | POST /withdrawals called for author_id=1
+2026-02-09 00:29:32,330 | INFO | AuthorService | Creating withdrawal: author_id=1, amount=2000
+2026-02-09 00:29:32,331 | INFO | AuthorService | Author 1 current_balance=2825.0
+2026-02-09 00:29:32,352 | INFO | AuthorService | Withdrawal created successfully for author_id=1, new_balance=825.0
+2026-02-09 00:29:38,998 | INFO | AuthorAPI | GET /authors/1/withdrawals called
+2026-02-09 00:29:38,998 | INFO | AuthorService | Fetching withdrawals for author_id=1
+2026-02-09 00:29:39,000 | INFO | AuthorService | Found 2 withdrawals for author_id=1
+2026-02-09 00:29:39,000 | INFO | AuthorAPI | Returning 2 withdrawals for author_id=1
+2026-02-09 00:30:13,244 | INFO | AuthorAPI | GET /authors called
+2026-02-09 00:30:13,244 | INFO | AuthorService | Fetching all authors
+2026-02-09 00:30:13,247 | INFO | AuthorService | Total authors found: 3
+2026-02-09 00:30:13,247 | INFO | AuthorService | Calculating balance for author_id=1
+2026-02-09 00:30:13,247 | INFO | AuthorService | Author 1 earnings calculated: 3825.0
+2026-02-09 00:30:13,247 | INFO | AuthorService | Author 1 withdrawn amount: 3000.0
+2026-02-09 00:30:13,251 | INFO | AuthorService | Author 1 balance: 825.0
+2026-02-09 00:30:13,251 | INFO | AuthorService | Calculating balance for author_id=2
+2026-02-09 00:30:13,252 | INFO | AuthorService | Author 2 earnings calculated: 9975.0
+2026-02-09 00:30:13,253 | INFO | AuthorService | Author 2 withdrawn amount: 0.0
+2026-02-09 00:30:13,253 | INFO | AuthorService | Author 2 balance: 9975.0
+2026-02-09 00:30:13,254 | INFO | AuthorService | Calculating balance for author_id=3
+2026-02-09 00:30:13,256 | INFO | AuthorService | Author 3 earnings calculated: 400.0
+2026-02-09 00:30:13,258 | INFO | AuthorService | Author 3 withdrawn amount: 0.0
+2026-02-09 00:30:13,259 | INFO | AuthorService | Author 3 balance: 400.0
+2026-02-09 00:30:13,259 | INFO | AuthorService | Finished processing authors
+2026-02-09 00:49:37,902 | INFO | AuthorAPI | GET /authors called
+2026-02-09 00:49:37,902 | INFO | AuthorService | Fetching all authors
+2026-02-09 00:49:37,906 | INFO | AuthorService | Total authors found: 3
+2026-02-09 00:49:37,906 | INFO | AuthorService | Calculating balance for author_id=1
+2026-02-09 00:49:37,912 | ERROR | AuthorAPI | Unexpected error while fetching
+Traceback (most recent call last):
+  File "D:\Bookleaf publishing project\Assignment-1\assignment-1\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "D:\Bookleaf publishing project\Assignment-1\assignment-1\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.OperationalError: no such table: books
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Bookleaf publishing project\assignment-1\routes\royalty_apis.py", line 27, in get_authors
+    return get_all_authors_with_balance(db)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Bookleaf publishing project\assignment-1\services\royalty_service.py", line 26, in get_all_authors_with_balance
+    .scalar()
+     ^^^^^^^^
+  File "D:\Bookleaf publishing project\Assignment-1\assignment-1\Lib\site-packages\sqlalchemy\orm\query.py", line 2835, in scalar
+    ret = self.one()
+          ^^^^^^^^^^
+  File "D:\Bookleaf publishing project\Assignment-1\assignment-1\Lib\site-packages\sqlalchemy\orm\query.py", line 2808, in one
+    return self._iter().one()  # type: ignore
+           ^^^^^^^^^^^^
+  File "D:\Bookleaf publishing project\Assignment-1\assignment-1\Lib\site-packages\sqlalchemy\orm\query.py", line 2857, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+                                                  ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Bookleaf publishing project\Assignment-1\assignment-1\Lib\site-packages\sqlalchemy\orm\session.py", line 2351, in execute
+    return self._execute_internal(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Bookleaf publishing project\Assignment-1\assignment-1\Lib\site-packages\sqlalchemy\orm\session.py", line 2249, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Bookleaf publishing project\Assignment-1\assignment-1\Lib\site-packages\sqlalchemy\orm\context.py", line 306, in orm_execute_statement
+    result = conn.execute(
+             ^^^^^^^^^^^^^
+  File "D:\Bookleaf publishing project\Assignment-1\assignment-1\Lib\site-packages\sqlalchemy\engine\base.py", line 1419, in execute
+    return meth(
+           ^^^^^
+  File "D:\Bookleaf publishing project\Assignment-1\assignment-1\Lib\site-packages\sqlalchemy\sql\elements.py", line 527, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Bookleaf publishing project\Assignment-1\assignment-1\Lib\site-packages\sqlalchemy\engine\base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Bookleaf publishing project\Assignment-1\assignment-1\Lib\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Bookleaf publishing project\Assignment-1\assignment-1\Lib\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "D:\Bookleaf publishing project\Assignment-1\assignment-1\Lib\site-packages\sqlalchemy\engine\base.py", line 2363, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "D:\Bookleaf publishing project\Assignment-1\assignment-1\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "D:\Bookleaf publishing project\Assignment-1\assignment-1\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) no such table: books
+[SQL: SELECT sum(sales.quantity * books.royalty_per_sale) AS sum_1 
+FROM sales JOIN books ON sales.book_id = books.id 
+WHERE books.author_id = ?]
+[parameters: (1,)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-02-09 00:50:08,942 | INFO | MainApp | Application shutting down
+2026-02-09 00:50:14,317 | INFO | MainApp | Application startup initiated
+2026-02-09 00:50:14,570 | INFO | MainApp | Database seeded successfully
+2026-02-09 00:50:14,570 | INFO | MainApp | Application started
+2026-02-09 00:52:18,300 | INFO | AuthorAPI | GET /authors called
+2026-02-09 00:52:18,300 | INFO | AuthorService | Fetching all authors
+2026-02-09 00:52:18,302 | INFO | AuthorService | Total authors found: 3
+2026-02-09 00:52:18,302 | INFO | AuthorService | Calculating balance for author_id=1
+2026-02-09 00:52:18,306 | INFO | AuthorService | Author 1 earnings calculated: 0.0
+2026-02-09 00:52:18,307 | INFO | AuthorService | Author 1 withdrawn amount: 0.0
+2026-02-09 00:52:18,307 | INFO | AuthorService | Author 1 balance: 0.0
+2026-02-09 00:52:18,308 | INFO | AuthorService | Calculating balance for author_id=2
+2026-02-09 00:52:18,309 | INFO | AuthorService | Author 2 earnings calculated: 0.0
+2026-02-09 00:52:18,310 | INFO | AuthorService | Author 2 withdrawn amount: 0.0
+2026-02-09 00:52:18,310 | INFO | AuthorService | Author 2 balance: 0.0
+2026-02-09 00:52:18,310 | INFO | AuthorService | Calculating balance for author_id=3
+2026-02-09 00:52:18,312 | INFO | AuthorService | Author 3 earnings calculated: 0.0
+2026-02-09 00:52:18,313 | INFO | AuthorService | Author 3 withdrawn amount: 0.0
+2026-02-09 00:52:18,313 | INFO | AuthorService | Author 3 balance: 0.0
+2026-02-09 00:52:18,313 | INFO | AuthorService | Finished processing authors
+2026-02-09 00:52:42,236 | INFO | AuthorAPI | GET /authors/author_id called
+2026-02-09 00:52:42,236 | INFO | AuthorService | Fetching author_id=1
+2026-02-09 00:52:42,244 | INFO | AuthorService | Author 1 fetched successfully
+2026-02-09 00:52:42,246 | INFO | AuthorAPI | Reposne from buisness logic
+2026-02-09 00:52:50,766 | INFO | AuthorAPI | GET /authors/author_id called
+2026-02-09 00:52:50,766 | INFO | AuthorService | Fetching author_id=2
+2026-02-09 00:52:50,769 | INFO | AuthorService | Author 2 fetched successfully
+2026-02-09 00:52:50,769 | INFO | AuthorAPI | Reposne from buisness logic
+2026-02-09 00:52:56,339 | INFO | AuthorAPI | GET /authors/author_id called
+2026-02-09 00:52:56,340 | INFO | AuthorService | Fetching author_id=3
+2026-02-09 00:52:56,342 | INFO | AuthorService | Author 3 fetched successfully
+2026-02-09 00:52:56,348 | INFO | AuthorAPI | Reposne from buisness logic
+2026-02-09 00:53:07,565 | INFO | AuthorService | Fetching sales for author_id=1
+2026-02-09 00:53:07,569 | INFO | AuthorService | Fetched 0 sales for author_id=1
+2026-02-09 00:53:20,556 | INFO | AuthorService | Fetching sales for author_id=2
+2026-02-09 00:53:20,558 | INFO | AuthorService | Fetched 0 sales for author_id=2
+2026-02-09 00:53:26,664 | INFO | AuthorService | Fetching sales for author_id=3
+2026-02-09 00:53:26,667 | INFO | AuthorService | Fetched 0 sales for author_id=3
+2026-02-09 00:53:38,819 | INFO | AuthorAPI | POST /withdrawals called
+2026-02-09 00:53:38,820 | INFO | AuthorAPI | POST /withdrawals called for author_id=1
+2026-02-09 00:53:38,820 | INFO | AuthorService | Creating withdrawal: author_id=1, amount=2000
+2026-02-09 00:53:38,822 | INFO | AuthorService | Author 1 current_balance=0.0
+2026-02-09 00:53:38,822 | WARNING | AuthorService | Withdrawal amount exceeds balance: 2000 > 0.0
+2026-02-09 00:53:50,278 | INFO | AuthorAPI | POST /withdrawals called
+2026-02-09 00:53:50,278 | INFO | AuthorAPI | POST /withdrawals called for author_id=2
+2026-02-09 00:53:50,278 | INFO | AuthorService | Creating withdrawal: author_id=2, amount=2000
+2026-02-09 00:53:50,282 | INFO | AuthorService | Author 2 current_balance=0.0
+2026-02-09 00:53:50,282 | WARNING | AuthorService | Withdrawal amount exceeds balance: 2000 > 0.0
+2026-02-09 00:54:15,141 | INFO | AuthorAPI | GET /authors/1/withdrawals called
+2026-02-09 00:54:15,141 | INFO | AuthorService | Fetching withdrawals for author_id=1
+2026-02-09 00:54:15,146 | INFO | AuthorService | No withdrawals found for author_id=1
+2026-02-09 00:54:15,148 | INFO | AuthorAPI | Returning 2 withdrawals for author_id=1
+2026-02-09 01:03:36,079 | INFO | MainApp | Application shutting down
+2026-02-09 01:03:39,774 | INFO | MainApp | Application startup initiated
+2026-02-09 01:03:39,799 | INFO | MainApp | Database seeded successfully
+2026-02-09 01:03:39,799 | INFO | MainApp | Application started
+2026-02-09 01:03:52,748 | INFO | AuthorService | Fetching sales for author_id=3
+2026-02-09 01:03:52,760 | INFO | AuthorService | No sales found for author_id=3
+2026-02-09 01:08:00,733 | INFO | AuthorAPI | GET /authors called
+2026-02-09 01:08:00,736 | INFO | AuthorService | Fetching all authors
+2026-02-09 01:08:00,737 | INFO | AuthorService | Total authors found: 3
+2026-02-09 01:08:00,737 | INFO | AuthorService | Calculating balance for author_id=1
+2026-02-09 01:08:00,741 | INFO | AuthorService | Author 1 earnings calculated: 0.0
+2026-02-09 01:08:00,744 | INFO | AuthorService | Author 1 withdrawn amount: 0.0
+2026-02-09 01:08:00,744 | INFO | AuthorService | Author 1 balance: 0.0
+2026-02-09 01:08:00,745 | INFO | AuthorService | Calculating balance for author_id=2
+2026-02-09 01:08:00,746 | INFO | AuthorService | Author 2 earnings calculated: 0.0
+2026-02-09 01:08:00,748 | INFO | AuthorService | Author 2 withdrawn amount: 0.0
+2026-02-09 01:08:00,748 | INFO | AuthorService | Author 2 balance: 0.0
+2026-02-09 01:08:00,749 | INFO | AuthorService | Calculating balance for author_id=3
+2026-02-09 01:08:00,751 | INFO | AuthorService | Author 3 earnings calculated: 0.0
+2026-02-09 01:08:00,752 | INFO | AuthorService | Author 3 withdrawn amount: 0.0
+2026-02-09 01:08:00,752 | INFO | AuthorService | Author 3 balance: 0.0
+2026-02-09 01:08:00,753 | INFO | AuthorService | Finished processing authors
+2026-02-09 01:08:12,050 | INFO | AuthorAPI | GET /authors/author_id called
+2026-02-09 01:08:12,050 | INFO | AuthorService | Fetching author_id=3
+2026-02-09 01:08:12,052 | INFO | AuthorService | Author 3 fetched successfully
+2026-02-09 01:08:12,052 | INFO | AuthorAPI | Reposne from buisness logic
+2026-02-09 01:10:42,228 | INFO | AuthorAPI | GET /authors/author_id called
+2026-02-09 01:10:42,228 | INFO | AuthorService | Fetching author_id=3
+2026-02-09 01:10:42,228 | INFO | AuthorService | Author 3 fetched successfully
+2026-02-09 01:10:42,237 | INFO | AuthorAPI | Reposne from buisness logic
+2026-02-09 01:12:51,400 | INFO | AuthorService | Fetching sales for author_id=3
+2026-02-09 01:12:51,408 | INFO | AuthorService | No sales found for author_id=3
+2026-02-09 01:12:58,938 | INFO | AuthorService | Fetching sales for author_id=4
+2026-02-09 01:12:58,940 | WARNING | AuthorService | Author not found: 4
+2026-02-09 01:13:06,366 | INFO | AuthorService | Fetching sales for author_id=1
+2026-02-09 01:13:06,370 | INFO | AuthorService | No sales found for author_id=1
+2026-02-09 01:13:15,757 | INFO | AuthorAPI | POST /withdrawals called
+2026-02-09 01:13:15,757 | INFO | AuthorAPI | POST /withdrawals called for author_id=1
+2026-02-09 01:13:15,757 | INFO | AuthorService | Creating withdrawal: author_id=1, amount=2000
+2026-02-09 01:13:15,763 | INFO | AuthorService | Author 1 current_balance=0.0
+2026-02-09 01:13:15,764 | WARNING | AuthorService | Withdrawal amount exceeds balance: 2000 > 0.0
+2026-02-09 01:13:25,078 | INFO | MainApp | Application shutting down
+2026-02-09 01:14:12,269 | INFO | MainApp | Application startup initiated
+2026-02-09 01:14:12,515 | INFO | MainApp | Database seeded successfully
+2026-02-09 01:14:12,516 | INFO | MainApp | Application started
+2026-02-09 01:16:14,293 | INFO | MainApp | Application shutting down
+2026-02-09 01:16:17,329 | INFO | MainApp | Application startup initiated
+2026-02-09 01:16:17,349 | INFO | MainApp | Database seeded successfully
+2026-02-09 01:16:17,349 | INFO | MainApp | Application started
+2026-02-09 01:20:54,183 | INFO | AuthorAPI | GET /authors called
+2026-02-09 01:20:54,183 | INFO | AuthorService | Fetching all authors
+2026-02-09 01:20:54,183 | INFO | AuthorService | Total authors found: 0
+2026-02-09 01:20:54,183 | INFO | AuthorService | Finished processing authors
+2026-02-09 01:25:45,332 | INFO | MainApp | Application shutting down
+2026-02-09 01:25:50,086 | INFO | MainApp | Application startup initiated
+2026-02-09 01:25:50,158 | ERROR | MainApp | Seeding failed: (sqlite3.IntegrityError) UNIQUE constraint failed: books.id
+[SQL: INSERT INTO books (id, title, royalty_per_sale, author_id) VALUES (?, ?, ?, ?)]
+[parameters: [(1, 'The Silent River', 45.0, 1), (2, 'Midnight in Mumbai', 60.0, 1), (3, 'Code & Coffee', 75.0, 2), (4, 'Startup Diaries', 50.0, 2), (5, 'Poetry of Pain', 30.0, 2), (6, 'Garden of Words', 40.0, 3)]]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2026-02-09 01:25:50,159 | INFO | MainApp | Application started
+2026-02-09 01:25:56,482 | INFO | AuthorAPI | GET /authors called
+2026-02-09 01:25:56,482 | INFO | AuthorService | Fetching all authors
+2026-02-09 01:25:56,486 | INFO | AuthorService | Total authors found: 3
+2026-02-09 01:25:56,486 | INFO | AuthorService | Calculating balance for author_id=1
+2026-02-09 01:25:56,488 | INFO | AuthorService | Author 1 earnings calculated: 3825.0
+2026-02-09 01:25:56,488 | INFO | AuthorService | Author 1 withdrawn amount: 0.0
+2026-02-09 01:25:56,488 | INFO | AuthorService | Author 1 balance: 3825.0
+2026-02-09 01:25:56,488 | INFO | AuthorService | Calculating balance for author_id=2
+2026-02-09 01:25:56,488 | INFO | AuthorService | Author 2 earnings calculated: 9975.0
+2026-02-09 01:25:56,488 | INFO | AuthorService | Author 2 withdrawn amount: 0.0
+2026-02-09 01:25:56,496 | INFO | AuthorService | Author 2 balance: 9975.0
+2026-02-09 01:25:56,496 | INFO | AuthorService | Calculating balance for author_id=3
+2026-02-09 01:25:56,497 | INFO | AuthorService | Author 3 earnings calculated: 400.0
+2026-02-09 01:25:56,497 | INFO | AuthorService | Author 3 withdrawn amount: 0.0
+2026-02-09 01:25:56,499 | INFO | AuthorService | Author 3 balance: 400.0
+2026-02-09 01:25:56,499 | INFO | AuthorService | Finished processing authors
+2026-02-09 01:26:20,440 | INFO | AuthorAPI | GET /authors called
+2026-02-09 01:26:20,440 | INFO | AuthorService | Fetching all authors
+2026-02-09 01:26:20,440 | INFO | AuthorService | Total authors found: 0
+2026-02-09 01:26:20,440 | INFO | AuthorService | No authors found in database
+2026-02-09 01:26:50,003 | INFO | AuthorAPI | GET /authors/author_id called
+2026-02-09 01:26:50,003 | INFO | AuthorService | Fetching author_id=1
+2026-02-09 01:26:51,239 | WARNING | AuthorService | Author not found: 1
+2026-02-09 01:27:06,494 | INFO | AuthorService | Fetching sales for author_id=2
+2026-02-09 01:27:06,494 | WARNING | AuthorService | Author not found: 2
+2026-02-09 01:27:28,121 | INFO | AuthorAPI | POST /withdrawals called
+2026-02-09 01:27:28,122 | INFO | AuthorAPI | POST /withdrawals called for author_id=1
+2026-02-09 01:27:28,122 | INFO | AuthorService | Creating withdrawal: author_id=1, amount=1000
+2026-02-09 01:27:28,122 | WARNING | AuthorService | Author not found: 1
+2026-02-09 01:27:42,796 | INFO | AuthorAPI | GET /authors/2/withdrawals called
+2026-02-09 01:27:42,796 | INFO | AuthorService | Fetching withdrawals for author_id=2
+2026-02-09 01:27:42,799 | WARNING | AuthorService | Author not found: 2
